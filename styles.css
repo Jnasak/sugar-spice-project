@@ -56,3 +56,20 @@
 @media(max-width:720px){
   .asset-placeholder--book{min-height:220px}
 }
+
+
+/* Approved brand master integration — source files retained unmodified. */
+.hero-project-mark img,
+.project-logo-light,
+.footer-project img{
+  display:block;
+  width:100%;
+  height:auto;
+  filter:none;
+}
+.expressive-logo{
+  display:block;
+  height:auto;
+  object-fit:contain;
+  filter:none;
+}
