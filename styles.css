@@ -73,3 +73,71 @@
   object-fit:contain;
   filter:none;
 }
+
+
+/* Identity and rhythm refinements */
+.header-row{height:86px}
+.header-identity{display:flex;align-items:center;text-decoration:none;line-height:normal;flex:0 0 auto}
+.header-project-logo{display:block;width:auto;height:68px;max-width:138px;object-fit:contain;filter:none}
+
+.book-reveal{padding:94px 0}
+.book-layout{gap:68px}
+.book-visual-field{min-height:540px;padding:44px}
+.book-content .expressive-logo{width:240px;margin-bottom:18px}
+
+.seven-section{padding:94px 0}
+.seven-intro{margin-bottom:36px}
+.seven-intro .expressive-logo.small{width:180px;margin-bottom:14px}
+
+.vision-section{padding:96px 0}
+.vision-layout{grid-template-columns:1.08fr .78fr .96fr;gap:44px 48px;align-items:start}
+.project-logo-light{width:260px;margin-bottom:30px}
+.vision-now,.vision-future{padding-top:18px}
+.vision-actions{padding-top:24px}
+
+.site-footer{padding:38px 0}
+.footer-layout{display:grid;grid-template-columns:minmax(180px,250px) 1fr auto;align-items:center;gap:32px}
+.footer-brand{display:block;background:var(--cream);padding:10px 14px;text-decoration:none}
+.footer-brand img{display:block;width:100%;height:auto;filter:none}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 22px}
+.footer-nav a{text-decoration:none;font-size:.75rem;font-weight:700;color:#d7ddde}
+.footer-nav a:hover{color:#fff}
+.footer-copy{text-align:right;color:#c9d0d1;font-size:.77rem}
+.footer-copy p{margin:0}
+
+@media(max-width:1050px){
+  .mobile-nav{top:86px}
+  .vision-layout{grid-template-columns:1fr 1fr;gap:38px 44px}
+  .vision-heading{grid-column:1/3}
+  .vision-now,.vision-future{padding-top:0}
+  .vision-actions{grid-column:1/3}
+  .footer-layout{grid-template-columns:220px 1fr;gap:26px 32px}
+  .footer-nav{justify-content:flex-end}
+  .footer-copy{grid-column:1/3;text-align:right}
+}
+
+@media(max-width:720px){
+  .header-row{height:72px}
+  .header-project-logo{height:58px;max-width:118px}
+  .mobile-nav{top:72px}
+
+  .book-reveal{padding:76px 0}
+  .book-layout{gap:38px}
+  .book-visual-field{min-height:420px;padding:30px}
+  .book-content .expressive-logo{width:190px;margin-bottom:16px}
+
+  .seven-section{padding:76px 0}
+  .seven-intro{margin-bottom:28px}
+  .seven-intro .expressive-logo.small{width:160px;margin-bottom:12px}
+
+  .vision-section{padding:76px 0}
+  .vision-heading,.vision-now,.vision-future,.vision-actions{margin-bottom:32px}
+  .project-logo-light{width:220px;margin-bottom:24px}
+  .vision-actions{padding-top:22px}
+
+  .site-footer{padding:36px 0 110px}
+  .footer-layout{display:block}
+  .footer-brand{width:220px;padding:9px 12px}
+  .footer-nav{justify-content:flex-start;gap:12px 18px;margin-top:26px}
+  .footer-copy{text-align:left;margin-top:22px}
+}
