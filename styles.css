@@ -34,7 +34,7 @@
 
 
 /* Standalone migration placeholders — temporary development states only.
-   These preserve layout without depending on JCA Portfolio assets. */
+   These preserve layout while approved source assets are pending. */
 .asset-placeholder{
   display:flex;
   align-items:center;
