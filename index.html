@@ -10,26 +10,31 @@
 <body>
   <header class="site-header">
     <div class="shell header-row">
-      <a class="header-identity" href="#top" aria-label="The Sugar & Spice Project">
+      <a class="header-identity" href="#top" aria-label="The Sugar & Spice Project home">
         <img class="header-project-logo" src="assets/brand/sugar-spice-project-logo-web.png" alt="The Sugar & Spice Project — Girls, Women, Communities"/>
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#why">Why</a>
-        <a href="#book">Book</a>
-        <a href="#seven">Seven Things</a>
+        <a href="#top" class="active">Home</a>
+        <a href="#why">About</a>
+        <a href="#book">The Book</a>
+        <a href="#vision">The Project</a>
         <a href="#participate">Participate</a>
-        <a href="#trust">Launch</a>
+        <a href="#media">Media</a>
         <a href="#faq">FAQ</a>
       </nav>
 
-      <button class="menu-button" aria-expanded="false" aria-label="Open navigation">Menu</button>
+      <a class="button primary header-cta" data-link-key="buy">Get the Book <span aria-hidden="true">→</span></a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
       <nav class="mobile-nav" aria-label="Mobile navigation">
         <a href="#why">Why This Matters</a>
         <a href="#book">Meet the Book</a>
         <a href="#seven">The Seven Things</a>
         <a href="#vision">Bigger Than the Book</a>
-        <a href="#participate">How You Can Participate</a>
+        <a href="#participate">Participate</a>
         <a href="#trust">Launch + Ruth</a>
         <a href="#media">Media / Project Moments</a>
         <a href="#faq">FAQ</a>
@@ -39,297 +44,249 @@
 
   <main id="top">
     <section class="hero">
-      <div class="shell countdown-shell">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow">REAL GIRLS. STRONG VALUES. BRIGHTER FUTURES.</div>
+          <h1>Every Girl<br/>Is <em>Becoming.</em></h1>
+          <p class="hero-statement">Let’s help her become the woman she was created to be.</p>
+          <p class="hero-support">A faith-rooted project helping girls build foundations around identity, confidence, purpose, character, vision and growth.</p>
+
+          <div class="hero-actions">
+            <a class="button primary" data-link-key="buy">Get the Book <span aria-hidden="true">→</span></a>
+            <a class="button secondary" data-link-key="sponsor">Sponsor Copies <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="hero-signals" aria-label="Project signals">
+            <div><span class="signal-icon" aria-hidden="true">▣</span><strong>A BOOK</strong><small>For Girls Only</small></div>
+            <div><span class="signal-icon" aria-hidden="true">◎</span><strong>A PROJECT</strong><small>For Communities</small></div>
+            <div><span class="signal-icon" aria-hidden="true">♡</span><strong>A MOVEMENT</strong><small>For the Future</small></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-floral" aria-hidden="true"></div>
+          <div class="hero-book-frame asset-placeholder asset-placeholder--book"
+               data-asset-src="assets/book/for-girls-only-cover-web.webp"
+               data-asset-alt="For Girls Only by Ruth Obi-Egbe approved book cover"
+               role="img"
+               aria-label="For Girls Only approved book cover pending repository integration">
+            <span>Approved book cover pending integration</span>
+          </div>
+          <div class="hero-hand-note" aria-hidden="true">Real Girls.<br/>Stronger Values.<br/>Brighter Futures.</div>
+          <div class="hero-stack" aria-hidden="true">
+            <span>REAL GIRLS</span><span>STRONG VALUES</span><span>BRIGHTER FUTURES</span>
+          </div>
+        </div>
+
         <aside class="countdown-card" id="launch-countdown" aria-label="Launch countdown">
+          <div class="countdown-icon" aria-hidden="true">♛</div>
           <div class="countdown-card-copy">
             <span class="countdown-kicker">FOR GIRLS ONLY</span>
             <strong data-countdown-primary>3 Days Remaining</strong>
             <span data-countdown-secondary>Launching 11 October 2026</span>
           </div>
-          <button class="countdown-close" type="button" aria-label="Dismiss launch countdown">
-            <span aria-hidden="true">×</span>
-          </button>
+          <button class="countdown-close" type="button" aria-label="Dismiss launch countdown"><span aria-hidden="true">×</span></button>
         </aside>
       </div>
-
-      <div class="shell hero-layout">
-        <div class="hero-copy">
-          <div class="project-kicker">GIRLS · WOMEN · COMMUNITIES</div>
-          <h1>Every Girl Is <em>Becoming.</em></h1>
-          <p class="hero-statement">Let’s help her become the woman she was created to be.</p>
-          <p class="hero-support">A faith-rooted project helping girls build foundations around identity, confidence, purpose, character, vision and growth.</p>
-
-          <div class="hero-actions">
-            <a class="button primary" data-link-key="buy" data-pending-label="The Selar purchase link">Get the Book</a>
-            <a class="button secondary" data-link-key="sponsor" data-pending-label="The sponsorship route">Sponsor Copies</a>
-          </div>
-
-          <div class="hero-meta">
-            <span>For Girls Only</span>
-            <span>By Ruth Obi-Egbe</span>
-            <span>Launching 11 October 2026</span>
-          </div>
-        </div>
-
-        <div class="hero-art" aria-label="For Girls Only book and project identity">
-          <div class="hero-art-frame">
-            <div class="hero-project-mark">
-              <img src="assets/brand/sugar-spice-project-logo-web.png" alt="The Sugar & Spice Project — Girls, Women, Communities"/>
-            </div>
-            <div class="hero-book-stage">
-              <div class="hero-book-shadow"></div>
-              <div class="hero-book asset-placeholder asset-placeholder--book" data-required-asset="/assets/book/for-girls-only-cover-web.webp" data-asset-src="assets/book/for-girls-only-cover-web.webp" data-asset-alt="For Girls Only by Ruth Obi-Egbe book cover" role="img" aria-label="For Girls Only approved book cover pending repository upload"><span>Approved book cover pending source</span></div>
-            </div>
-            <div class="hero-art-note">
-              <span>Real girls.</span>
-              <span>Strong values.</span>
-              <span>Brighter futures.</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="editorial-section" id="why">
+    <section class="why-section" id="why">
       <div class="shell why-layout">
-        <div class="section-number">01</div>
-        <div class="why-statement">
-          <div class="eyebrow">WHY THIS MATTERS</div>
-          <h2>She is becoming.<br/>The world is already speaking.</h2>
-        </div>
         <div class="why-copy">
+          <div class="eyebrow">OUR WHY</div>
+          <h2><em>She is becoming.</em><br/>The world is already speaking.</h2>
           <p>Every girl is becoming a woman. The question is: who is helping shape who she becomes?</p>
           <p>The world is already telling girls who they should be, what they should value and what success should look like. We believe she deserves another voice — one that helps her understand who she is, why she is here, how she is designed and what she can become.</p>
-          <blockquote>A girl who knows her worth is better equipped to navigate a world that will constantly try to define it for her.</blockquote>
-          <a class="micro-link" href="#book" data-scroll>Discover the Book <span>→</span></a>
+          <a class="button primary internal-cta" href="#book" data-scroll>Discover the Book <span aria-hidden="true">→</span></a>
+        </div>
+
+        <blockquote class="why-quote">
+          <span aria-hidden="true">“</span>
+          <p>A girl who knows her worth is better equipped to navigate a world that will constantly try to define it for her.</p>
+        </blockquote>
+
+        <div class="why-image asset-placeholder asset-placeholder--photo" role="img" aria-label="Approved Project image pending integration">
+          <span>Approved Project image pending integration</span>
         </div>
       </div>
     </section>
 
-    <section class="book-reveal" id="book">
+    <section class="book-section" id="book">
       <div class="shell book-layout">
-        <div class="book-visual-column">
-          <div class="book-visual-field">
-            <div class="book-cover-large asset-placeholder asset-placeholder--book" data-required-asset="/assets/book/for-girls-only-cover-web.webp" data-asset-src="assets/book/for-girls-only-cover-web.webp" data-asset-alt="For Girls Only by Ruth Obi-Egbe book cover" role="img" aria-label="For Girls Only approved book cover pending repository upload"><span>Approved book cover pending source</span></div>
-            <div class="book-vertical-label">FOR GIRLS ONLY</div>
+        <div class="book-copy">
+          <div class="eyebrow">MEET THE BOOK</div>
+          <img class="expressive-logo" src="assets/brand/sugar-spice-wordmark-web.png" alt="Sugar & Spice"/>
+          <h2><em>For Girls Only</em></h2>
+          <p class="book-subtitle">7 Things Every Girl Should Know Before She Becomes a Woman</p>
+          <p>A practical, engaging and faith-rooted guide helping girls understand the foundations they need before stepping into womanhood.</p>
+          <div class="book-actions">
+            <a class="button primary" data-link-key="buy">Get the Book <span aria-hidden="true">→</span></a>
           </div>
         </div>
 
-        <div class="book-content">
-          <img class="expressive-logo" src="assets/brand/sugar-spice-wordmark-web.png" alt="Sugar & Spice"/>
-          <div class="eyebrow">MEET THE BOOK</div>
-          <h2>Seven foundations for the journey into womanhood.</h2>
-          <p class="book-subtitle">For Girls Only — 7 Things Every Girl Should Know Before She Becomes a Woman</p>
-          <p>A practical, engaging and faith-rooted guide helping girls understand the foundations they need before stepping into womanhood.</p>
-
-          <div class="book-points">
-            <span>Know her origin</span>
-            <span>Embrace her design</span>
-            <span>Find her purpose</span>
-            <span>Master herself</span>
-            <span>See her future</span>
-            <span>Keep becoming</span>
-            <span>Leave a legacy</span>
+        <div class="book-product">
+          <div class="book-cover-large asset-placeholder asset-placeholder--book"
+               data-asset-src="assets/book/for-girls-only-cover-web.webp"
+               data-asset-alt="For Girls Only by Ruth Obi-Egbe approved book cover"
+               role="img"
+               aria-label="For Girls Only approved book cover pending repository integration">
+            <span>Approved book cover pending integration</span>
           </div>
+        </div>
 
-          <div class="section-actions">
-            <a class="button primary" data-link-key="buy" data-pending-label="The Selar purchase link">Get the Book</a>
-            <a class="micro-link" href="#seven" data-scroll>See the Seven Things <span>→</span></a>
-          </div>
+        <div class="book-benefits">
+          <div class="benefits-title">She will learn to:</div>
+          <ul>
+            <li><span aria-hidden="true">◈</span><span>Know her origin.</span></li>
+            <li><span aria-hidden="true">☼</span><span>Understand her design.</span></li>
+            <li><span aria-hidden="true">♙</span><span>Discover her purpose.</span></li>
+            <li><span aria-hidden="true">♢</span><span>Master herself.</span></li>
+            <li><span aria-hidden="true">◎</span><span>See her future.</span></li>
+            <li><span aria-hidden="true">◫</span><span>Grow into it.</span></li>
+            <li><span aria-hidden="true">◇</span><span>Leave a legacy.</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section class="seven-section" id="seven">
       <div class="shell">
-        <div class="section-intro seven-intro">
-          <div>
-            <img class="expressive-logo small" src="assets/brand/sugar-spice-wordmark-web.png" alt="Sugar & Spice"/>
-            <div class="eyebrow">THE SEVEN THINGS</div>
-          </div>
-          <h2>Foundations for becoming.</h2>
-          <p>Seven foundations to help girls understand who they are, how they are designed and how to move toward womanhood with purpose.</p>
+        <div class="seven-heading">
+          <div class="eyebrow">THE SEVEN THINGS</div>
+          <p>Seven practical foundations to help girls understand who they are, how they are designed and how to move toward womanhood with purpose.</p>
         </div>
 
-        <div class="principles">
-          <article class="principle-row">
-            <div class="principle-no">01</div>
-            <div class="principle-label">FOUNDATION</div>
-            <div class="principle-copy"><h3>Know Your Origin. Build on Truth.</h3><p>The facts of your upbringing do not cancel the truth of your origin.</p></div>
-          </article>
-          <article class="principle-row">
-            <div class="principle-no">02</div>
-            <div class="principle-label">FORMULATION</div>
-            <div class="principle-copy"><h3>Embrace Your Design. Own Your Difference.</h3><p>Your distinction in life begins with the uniqueness of your design.</p></div>
-          </article>
-          <article class="principle-row">
-            <div class="principle-no">03</div>
-            <div class="principle-label">FRUSTRATION</div>
-            <div class="principle-copy"><h3>Find Your Purpose. Build Your Confidence.</h3><p>The discovery of your purpose gives you confidence to become who you were created to be.</p></div>
-          </article>
-          <article class="principle-row">
-            <div class="principle-no">04</div>
-            <div class="principle-label">FIXATION</div>
-            <div class="principle-copy"><h3>Master Yourself. Make Better Choices.</h3><p>The mastery of yourself gives direction to your emotions, choices and actions.</p></div>
-          </article>
-          <article class="principle-row">
-            <div class="principle-no">05</div>
-            <div class="principle-label">FORMATION</div>
-            <div class="principle-copy"><h3>See Your Future. Shape Your Actions.</h3><p>A clear vision gives your life direction and your daily choices discipline.</p></div>
-          </article>
-          <article class="principle-row">
-            <div class="principle-no">06</div>
-            <div class="principle-label">FORTIFICATION</div>
-            <div class="principle-copy"><h3>Keep Growing. Keep Becoming.</h3><p>Your capacity to grow determines the value you are able to create.</p></div>
-          </article>
-          <article class="principle-row">
-            <div class="principle-no">07</div>
-            <div class="principle-label">FINISHING</div>
-            <div class="principle-copy"><h3>Stay Committed. Leave a Legacy.</h3><p>The consistency of your commitment determines the legacy your life will leave.</p></div>
-          </article>
-        </div>
-
-        <div class="seven-cta">
-          <p>You have seen the framework. The book carries the full journey.</p>
-          <a class="button primary" data-link-key="buy" data-pending-label="The Selar purchase link">Get All Seven in the Book</a>
+        <div class="seven-grid">
+          <article class="seven-item"><div class="seven-no">01</div><div class="seven-icon" aria-hidden="true">◊</div><h3>Foundation</h3><p>Know your origin.<br/>Build on truth.</p></article>
+          <article class="seven-item"><div class="seven-no">02</div><div class="seven-icon" aria-hidden="true">☼</div><h3>Formulation</h3><p>Embrace your design.<br/>Own your difference.</p></article>
+          <article class="seven-item"><div class="seven-no">03</div><div class="seven-icon" aria-hidden="true">♙</div><h3>Frustration</h3><p>Find your purpose.<br/>Build your confidence.</p></article>
+          <article class="seven-item"><div class="seven-no">04</div><div class="seven-icon" aria-hidden="true">♡</div><h3>Fixation</h3><p>Master yourself.<br/>Make better choices.</p></article>
+          <article class="seven-item"><div class="seven-no">05</div><div class="seven-icon" aria-hidden="true">◎</div><h3>Formation</h3><p>See your future.<br/>Shape your actions.</p></article>
+          <article class="seven-item"><div class="seven-no">06</div><div class="seven-icon" aria-hidden="true">▥</div><h3>Fortification</h3><p>Keep growing.<br/>Keep becoming.</p></article>
+          <article class="seven-item"><div class="seven-no">07</div><div class="seven-icon" aria-hidden="true">◇</div><h3>Finishing</h3><p>Stay committed.<br/>Leave a legacy.</p></article>
         </div>
       </div>
     </section>
 
     <section class="vision-section" id="vision">
       <div class="shell vision-layout">
-        <div class="vision-heading">
-          <img class="project-logo-light" src="assets/brand/sugar-spice-project-logo-web.png" alt="The Sugar & Spice Project — Girls, Women, Communities"/>
+        <div class="vision-copy">
           <div class="eyebrow light">BIGGER THAN THE BOOK</div>
-          <h2>The book is the beginning of a wider vision.</h2>
+          <h2>A Project for<br/>Lasting Change</h2>
+          <p>The book is just the beginning. The Sugar & Spice Project is growing toward conversations, content, mentorship and community experiences that can support girls as they become.</p>
+          <a class="button gold-button" href="#participate" data-scroll>Learn More About the Project <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="vision-now">
-          <div class="vision-status">WHAT EXISTS NOW</div>
+          <span class="vision-label">WHAT EXISTS NOW</span>
           <h3>For Girls Only</h3>
           <p>A practical, values-based book for girls and the adults who guide them.</p>
         </div>
 
         <div class="vision-future">
-          <div class="vision-status">FUTURE-FACING DIRECTION</div>
-          <div class="future-list">
-            <span>Conversations</span>
-            <span>Content</span>
-            <span>Mentorship</span>
-            <span>School &amp; community activations</span>
-            <span>Girls’ development</span>
+          <span class="vision-label">FUTURE-FACING DIRECTION</span>
+          <div class="future-grid">
+            <div><span aria-hidden="true">▣</span><strong>The Book</strong><small>Practical, faith-rooted guidance for today’s girls.</small></div>
+            <div><span aria-hidden="true">◌</span><strong>Conversations</strong><small>Safe and meaningful dialogue.</small></div>
+            <div><span aria-hidden="true">◎</span><strong>Mentorship</strong><small>Guidance from women who have walked the journey.</small></div>
+            <div><span aria-hidden="true">⌂</span><strong>School & Community</strong><small>Approved activations for more girls.</small></div>
+            <div><span aria-hidden="true">☆</span><strong>Girls’ Development</strong><small>Building stronger, brighter futures.</small></div>
           </div>
-          <p class="future-note">The vision is growing beyond the book — toward conversations, mentorship, content and community experiences that can support girls as they become.</p>
-        </div>
-
-        <div class="vision-actions">
-          <a class="button light-button" data-link-key="partner" data-pending-label="The partnership enquiry route">Partner With the Project</a>
-          <a class="micro-link light-link" data-link-key="activation" data-pending-label="The activation enquiry route">Host an Activation <span>→</span></a>
         </div>
       </div>
     </section>
 
     <section class="participate-section" id="participate">
       <div class="shell">
-        <div class="section-intro participate-intro">
-          <div class="eyebrow">HOW YOU CAN PARTICIPATE</div>
-          <h2>Choose the role that fits you.</h2>
-          <p>Whether you are buying for a girl you love, sponsoring access, hosting an experience or partnering with the project, there is a clear way to take part.</p>
+        <div class="participate-heading">
+          <div class="eyebrow">GET INVOLVED</div>
+          <h2>Ways to Participate</h2>
+          <p>Different ways to support, depending on where you are and how you want to help.</p>
         </div>
 
-        <div class="primary-paths">
-          <article class="primary-path burgundy">
-            <div class="path-index">01</div>
-            <div>
-              <div class="path-audience">For parents, guardians, mentors and adult buyers</div>
-              <h3>Get the Book</h3>
-              <p>Get a copy for a daughter, niece, student, mentee or girl you support.</p>
-            </div>
-            <a class="button cream-button" data-link-key="buy" data-pending-label="The Selar purchase link">Get the Book</a>
-          </article>
+        <div class="participation-grid">
+          <article><span class="participation-icon" aria-hidden="true">▣</span><h3>Get the Book</h3><p>A practical guide for today’s girls.</p><a class="button primary" data-link-key="buy">Get the Book <span aria-hidden="true">→</span></a></article>
+          <article><span class="participation-icon" aria-hidden="true">♢</span><h3>Sponsor Copies</h3><p>Help more girls access the book.</p><a class="button primary" data-link-key="sponsor">Sponsor Copies <span aria-hidden="true">→</span></a></article>
+          <article><span class="participation-icon" aria-hidden="true">◎</span><h3>Partner With the Project</h3><p>Collaborate for greater impact.</p><a class="button primary" data-link-key="partner">Partner With the Project <span aria-hidden="true">→</span></a></article>
+          <article><span class="participation-icon" aria-hidden="true">♡</span><h3>Fund or Host an Activation</h3><p>Bring the project to your school or community.</p><a class="button primary" data-link-key="activation">Fund or Host an Activation <span aria-hidden="true">→</span></a></article>
+        </div>
+      </div>
+    </section>
 
-          <article class="primary-path teal">
-            <div class="path-index">02</div>
-            <div>
-              <div class="path-audience">For individuals, brands and organisations</div>
-              <h3>Sponsor Copies</h3>
-              <p>Support access to copies for girls through approved distribution channels.</p>
-            </div>
-            <a class="button cream-button" data-link-key="sponsor" data-pending-label="The sponsorship route">Sponsor Copies</a>
-          </article>
+    <section class="campaign-section" aria-labelledby="campaign-title">
+      <div class="shell campaign-layout">
+        <div class="campaign-copy">
+          <div class="eyebrow">CAMPAIGN IN ACTION</div>
+          <h2 id="campaign-title">Real Support.<br/>Real Opportunities.</h2>
+          <p>The approved campaign board is part of the project’s current website content set.</p>
+          <div class="campaign-portrait asset-placeholder asset-placeholder--portrait" role="img" aria-label="Approved Ruth portrait pending integration">
+            <span>Approved Ruth portrait pending integration</span>
+          </div>
         </div>
 
-        <div class="secondary-paths">
-          <article>
-            <div class="path-kicker">ACTIVATION</div>
-            <h4>Fund or Host an Activation</h4>
-            <p>For schools, churches and communities exploring conversations, sessions or other approved Sugar &amp; Spice experiences.</p>
-            <a class="micro-link" data-link-key="activation" data-pending-label="The activation enquiry route">Start an Activation Enquiry <span>→</span></a>
-          </article>
-          <article>
-            <div class="path-kicker">PARTNERSHIP</div>
-            <h4>Partner With the Project</h4>
-            <p>For strategic, corporate, institutional or in-kind support.</p>
-            <a class="micro-link" data-link-key="partner" data-pending-label="The partnership enquiry route">Explore Partnership <span>→</span></a>
-          </article>
-          <article>
-            <div class="path-kicker">MEDIA</div>
-            <h4>Amplify the Work</h4>
-            <p>For media, storytelling and amplification enquiries where a distinct route is needed.</p>
-            <a class="micro-link" data-link-key="media" data-pending-label="The media enquiry route">Media Enquiry <span>→</span></a>
-          </article>
+        <figure class="campaign-board-card">
+          <div class="campaign-board-frame asset-placeholder asset-placeholder--media"
+               data-asset-src="assets/media/sugar-spice-campaign-board.webp"
+               data-asset-alt="Sugar & Spice campaign board featuring For Girls Only, approved partner logos and the confirmed campaign QR code"
+               role="img"
+               aria-label="Approved Sugar & Spice campaign board pending repository integration">
+            <span>Approved campaign board pending integration</span>
+          </div>
+          <figcaption>
+            <button class="micro-link media-full-view" type="button" hidden>View full board <span aria-hidden="true">→</span></button>
+          </figcaption>
+        </figure>
+
+        <div class="campaign-more">
+          <h3>More Ways to Get Involved</h3>
+          <ul>
+            <li><strong>Sponsor a School Activation</strong><span>Help us reach more girls.</span></li>
+            <li><strong>Provide In-Kind Support</strong><span>Venue, logistics, media or services.</span></li>
+            <li><strong>Join as a Volunteer</strong><span>Be part of the movement.</span></li>
+            <li><strong>Bring the Conversation to Your Community</strong><span>Host a talk, discussion or workshop.</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section class="trust-section" id="trust">
       <div class="shell trust-layout">
-        <div class="trust-launch">
-          <div class="eyebrow">THE LAUNCH</div>
-          <div class="launch-date">11<span>OCT</span></div>
-          <h2>For Girls Only Launch</h2>
-          <p>For Girls Only launches on 11 October 2026. Follow the project’s approved channels for final attendance details.</p>
-          <a class="micro-link" data-link-key="whatsapp" data-pending-label="The approved project WhatsApp route">Get Launch Updates <span>→</span></a>
+        <div class="trust-copy">
+          <div class="eyebrow">LAUNCH + RUTH + TRUST</div>
+          <h2>Launch + Ruth + Trust</h2>
+          <p>For Girls Only launches on 11 October 2026.</p>
+          <p>Ruth is a development catalyst, people-oriented change leader, author and family advocate passionate about helping people, organisations and families navigate growth and change without losing their foundation.</p>
+          <p>Through The Sugar & Spice Project, she is turning years of conversations, teaching and lived experience into resources that help girls build strong foundations for womanhood.</p>
         </div>
 
-        <div class="trust-author">
-          <div class="eyebrow">THE WOMAN BEHIND THE PROJECT</div>
-          <h2>Ruth Obi-Egbe</h2>
-          <p>Ruth is a development catalyst, people-oriented change leader, author and family advocate passionate about helping people, organisations and families navigate growth and change without losing their foundation.</p>
-          <p>Through The Sugar &amp; Spice Project, she is turning years of conversations, teaching and lived experience into resources that help girls build strong foundations for womanhood.</p>
+        <blockquote class="trust-quote">
+          <span aria-hidden="true">“</span>
+          <p>A girl who knows her worth is better equipped to navigate a world that will constantly try to define it for her.</p>
+        </blockquote>
+
+        <div class="trust-image asset-placeholder asset-placeholder--portrait" role="img" aria-label="Approved Ruth editorial portrait pending integration">
+          <span>Approved Ruth editorial portrait pending integration</span>
         </div>
       </div>
     </section>
 
-
     <section class="media-section" id="media">
-      <div class="shell media-layout">
-        <div class="media-heading">
-          <div class="eyebrow">MEDIA / PROJECT MOMENTS</div>
-          <h2>See the Project in motion.</h2>
+      <div class="shell">
+        <div class="media-heading-row">
+          <div>
+            <div class="eyebrow">MEDIA &amp; PROJECT MOMENTS</div>
+            <h2>Stories. Conversations. Community.</h2>
+          </div>
+          <a class="micro-link" data-link-key="media">View Gallery <span aria-hidden="true">→</span></a>
         </div>
 
-        <figure class="campaign-board-card">
-          <div class="campaign-board-frame asset-placeholder asset-placeholder--media"
-               data-asset-src="assets/media/sugar-spice-campaign-board.jpeg"
-               data-asset-alt="Sugar & Spice campaign board featuring For Girls Only, approved partner logos and the confirmed campaign QR code"
-               role="img"
-               aria-label="Approved Sugar & Spice campaign board pending repository upload">
-            <span>Approved campaign board pending repository upload</span>
-          </div>
-          <figcaption class="campaign-board-meta">
-            <span class="path-kicker">PROJECT MOMENT</span>
-            <button class="micro-link media-full-view" type="button" hidden>View full board <span aria-hidden="true">→</span></button>
-          </figcaption>
-        </figure>
-
-        <div class="media-supporting" aria-label="Supporting Project moments">
-          <div class="media-moment asset-placeholder">
-            <span>Approved school/community image selected — source integration pending</span>
-          </div>
-          <div class="media-moment asset-placeholder">
-            <span>Additional approved media may be integrated when selected</span>
-          </div>
+        <div class="media-strip" aria-label="Curated Project moments">
+          <div class="media-moment media-moment--primary asset-placeholder" role="img" aria-label="Primary approved Project media pending integration"><span>Primary approved Project media pending integration</span></div>
+          <div class="media-moment asset-placeholder" role="img" aria-label="Approved school or community photograph pending integration"><span>Approved school/community image pending integration</span></div>
+          <div class="media-moment asset-placeholder" role="img" aria-label="Approved supporting Project media pending integration"><span>Supporting approved media pending integration</span></div>
+          <div class="media-moment asset-placeholder" role="img" aria-label="Approved supporting Project media pending integration"><span>Supporting approved media pending integration</span></div>
         </div>
       </div>
     </section>
@@ -338,54 +295,31 @@
       <div class="shell faq-layout">
         <div class="faq-heading">
           <div class="eyebrow">FAQ</div>
-          <h2>Questions adults may have before they act.</h2>
+          <h2>Common Questions</h2>
           <p>Helpful answers for parents, sponsors, partners and other supporters.</p>
         </div>
 
         <div class="faq-list">
-          <article class="faq-item">
-            <button type="button" aria-expanded="false" aria-controls="faq-answer-1"><span>Who is the book for?</span><span aria-hidden="true">+</span></button>
-            <div class="faq-answer" id="faq-answer-1" role="region" hidden>The book is primarily designed for girls approximately 8–18, while remaining useful for parents, guardians, mentors and women who guide them.</div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false" aria-controls="faq-answer-2"><span>Is it a Christian book?</span><span aria-hidden="true">+</span></button>
-            <div class="faq-answer" id="faq-answer-2" role="region" hidden>The project is rooted in a Christian worldview and God’s design for girls and women, while addressing identity, character, purpose, confidence and growth.</div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false" aria-controls="faq-answer-3"><span>How do I get a copy?</span><span aria-hidden="true">+</span></button>
-            <div class="faq-answer" id="faq-answer-3" role="region" hidden>Copies will be available through the project’s approved purchase channel.</div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false" aria-controls="faq-answer-4"><span>Can I sponsor copies?</span><span aria-hidden="true">+</span></button>
-            <div class="faq-answer" id="faq-answer-4" role="region" hidden>Yes. Sponsorship is designed for individuals, brands and organisations that want to support access to the book for girls.</div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false" aria-controls="faq-answer-5"><span>Can my school, church or community host an activation?</span><span aria-hidden="true">+</span></button>
-            <div class="faq-answer" id="faq-answer-5" role="region" hidden>Yes. Schools, churches and communities can enquire about approved Sugar &amp; Spice activations.</div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false" aria-controls="faq-answer-6"><span>How can an organisation partner?</span><span aria-hidden="true">+</span></button>
-            <div class="faq-answer" id="faq-answer-6" role="region" hidden>Strategic, corporate, institutional and in-kind partnership routes are part of the planned conversion model.</div>
-          </article>
-        </div>
-
-        <div class="faq-contact">
-          <span>Still have a question?</span>
-          <a class="micro-link" data-link-key="whatsapp" data-pending-label="The approved project WhatsApp route">Contact the Project <span>→</span></a>
+          <article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-answer-1"><span>Who is the book for?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-1" role="region" hidden>The book is primarily designed for girls approximately 8–18, while remaining useful for parents, guardians, mentors and women who guide them.</div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-answer-2"><span>Is it a Christian book?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-2" role="region" hidden>The project is rooted in a Christian worldview and God’s design for girls and women, while addressing identity, character, purpose, confidence and growth.</div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-answer-3"><span>How do I get a copy?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-3" role="region" hidden>Copies will be available through the project’s approved purchase channel.</div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-answer-4"><span>Can I sponsor copies?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-4" role="region" hidden>Yes. Sponsorship is designed for individuals, brands and organisations that want to support access to the book for girls.</div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-answer-5"><span>Can my school, church or community host an activation?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-5" role="region" hidden>Yes. Schools, churches and communities can enquire about approved Sugar &amp; Spice activations.</div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-answer-6"><span>How can an organisation partner?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-6" role="region" hidden>Strategic, corporate, institutional and in-kind partnership routes are part of the planned conversion model.</div></article>
         </div>
       </div>
     </section>
 
     <section class="final-section">
       <div class="shell final-layout">
-        <div>
-          <div class="eyebrow">WHAT COMES NEXT</div>
-          <h2>Every girl is becoming.<br/>Help make what comes next possible.</h2>
+        <div class="final-message">
+          <span class="final-kicker">Every girl is becoming.</span>
+          <strong>Help make what comes next possible.</strong>
         </div>
         <div class="final-actions">
-          <a class="button primary" data-link-key="buy" data-pending-label="The Selar purchase link">Get the Book</a>
-          <a class="button secondary" data-link-key="sponsor" data-pending-label="The sponsorship route">Sponsor Copies</a>
-          <a class="micro-link" data-link-key="partner" data-pending-label="The partnership enquiry route">Explore Partnership Opportunities <span>→</span></a>
+          <a class="button primary" data-link-key="buy">Get the Book <span aria-hidden="true">→</span></a>
+          <a class="button secondary" data-link-key="sponsor">Sponsor Copies <span aria-hidden="true">→</span></a>
+          <a class="micro-link" data-link-key="partner">Partner With the Project <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
@@ -396,13 +330,17 @@
       <a class="footer-brand" href="#top" aria-label="The Sugar & Spice Project home">
         <img src="assets/brand/sugar-spice-project-logo-web.png" alt="The Sugar & Spice Project — Girls, Women, Communities"/>
       </a>
+
       <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="#book">Book</a>
-        <a href="#seven">Seven Things</a>
+        <a href="#top">Home</a>
+        <a href="#why">About</a>
+        <a href="#book">The Book</a>
+        <a href="#vision">The Project</a>
         <a href="#participate">Participate</a>
-        <a href="#trust">Launch</a>
+        <a href="#media">Media</a>
         <a href="#faq">FAQ</a>
       </nav>
+
       <div class="footer-copy">
         <p>Real Girls · Strong Values · Brighter Futures</p>
       </div>
@@ -412,7 +350,7 @@
   <aside class="sticky-book-action" aria-label="Book purchase reminder" hidden>
     <div class="sticky-book-thumb asset-placeholder"
          data-asset-src="assets/book/for-girls-only-cover-web.webp"
-         data-asset-alt="For Girls Only by Ruth Obi-Egbe book cover">
+         data-asset-alt="For Girls Only by Ruth Obi-Egbe approved book cover">
       <span aria-hidden="true">Book</span>
     </div>
     <div class="sticky-book-copy">
@@ -429,9 +367,9 @@
     </div>
     <div class="media-dialog-scroll">
       <div class="media-dialog-asset asset-placeholder"
-           data-asset-src="assets/media/sugar-spice-campaign-board.jpeg"
+           data-asset-src="assets/media/sugar-spice-campaign-board.webp"
            data-asset-alt="Sugar & Spice campaign board featuring For Girls Only, approved partner logos and the confirmed campaign QR code">
-        <span>Approved campaign board pending repository upload</span>
+        <span>Approved campaign board pending integration</span>
       </div>
     </div>
   </dialog>
