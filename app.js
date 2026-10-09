@@ -51,24 +51,20 @@
       const url = c.links && c.links[key];
       if(url){
         el.href = url;
-        el.hidden = false;
-        el.removeAttribute('aria-hidden');
+        el.classList.remove('is-unresolved');
+        el.removeAttribute('aria-disabled');
         if(/^https?:/i.test(url)){
           el.target = '_blank';
           el.rel = 'noopener noreferrer';
         }
       }else{
         el.removeAttribute('href');
-        el.hidden = true;
-        el.setAttribute('aria-hidden','true');
+        el.removeAttribute('target');
+        el.removeAttribute('rel');
+        el.classList.add('is-unresolved');
+        el.setAttribute('aria-disabled','true');
+        el.addEventListener('click', (event) => event.preventDefault());
       }
-    });
-
-    ['.hero-actions','.section-actions','.vision-actions','.final-actions','.faq-contact'].forEach((selector) => {
-      document.querySelectorAll(selector).forEach((group) => {
-        const actionable = [...group.querySelectorAll('[data-link-key]')].some((el) => !el.hidden);
-        if(!actionable && group.querySelector('[data-link-key]')) group.hidden = true;
-      });
     });
   }
 
@@ -125,10 +121,7 @@
   });
 
   function syncStickyBook(){
-    if(!stickyBook || !buyUrl){
-      if(stickyBook) stickyBook.hidden = true;
-      return;
-    }
+    if(!stickyBook) return;
     const countdownActive = countdown && !countdown.hidden && !countdownProgressed;
     const shouldShow = countdownProgressed && !countdownActive && !endMatterVisible;
     stickyBook.hidden = !shouldShow;
