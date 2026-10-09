@@ -31,6 +31,7 @@
         <a href="#vision">Bigger Than the Book</a>
         <a href="#participate">How You Can Participate</a>
         <a href="#trust">Launch + Ruth</a>
+        <a href="#media">Media / Project Moments</a>
         <a href="#faq">FAQ</a>
       </nav>
     </div>
@@ -38,11 +39,17 @@
 
   <main id="top">
     <section class="hero">
-      <div class="launch-ribbon" id="launch-countdown" aria-label="Launch countdown">
-        <div class="countdown-track" aria-hidden="true">
-          <span data-countdown-message>4 DAYS TO GO • FOR GIRLS ONLY LAUNCHES 11 OCTOBER 2026 • HELP A GIRL BECOME •</span>
-          <span data-countdown-message aria-hidden="true">4 DAYS TO GO • FOR GIRLS ONLY LAUNCHES 11 OCTOBER 2026 • HELP A GIRL BECOME •</span>
-        </div>
+      <div class="shell countdown-shell">
+        <aside class="countdown-card" id="launch-countdown" aria-label="Launch countdown">
+          <div class="countdown-card-copy">
+            <span class="countdown-kicker">FOR GIRLS ONLY</span>
+            <strong data-countdown-primary>3 Days Remaining</strong>
+            <span data-countdown-secondary>Launching 11 October 2026</span>
+          </div>
+          <button class="countdown-close" type="button" aria-label="Dismiss launch countdown">
+            <span aria-hidden="true">×</span>
+          </button>
+        </aside>
       </div>
 
       <div class="shell hero-layout">
@@ -71,7 +78,7 @@
             </div>
             <div class="hero-book-stage">
               <div class="hero-book-shadow"></div>
-              <div class="hero-book asset-placeholder asset-placeholder--book" data-required-asset="/assets/book/for-girls-only-cover.png" role="img" aria-label="For Girls Only approved book cover pending source upload"><span>Approved book cover pending source</span></div>
+              <div class="hero-book asset-placeholder asset-placeholder--book" data-required-asset="/assets/book/for-girls-only-cover-web.webp" data-asset-src="assets/book/for-girls-only-cover-web.webp" data-asset-alt="For Girls Only by Ruth Obi-Egbe book cover" role="img" aria-label="For Girls Only approved book cover pending repository upload"><span>Approved book cover pending source</span></div>
             </div>
             <div class="hero-art-note">
               <span>Real girls.</span>
@@ -103,7 +110,7 @@
       <div class="shell book-layout">
         <div class="book-visual-column">
           <div class="book-visual-field">
-            <div class="book-cover-large asset-placeholder asset-placeholder--book" data-required-asset="/assets/book/for-girls-only-cover.png" role="img" aria-label="For Girls Only approved book cover pending source upload"><span>Approved book cover pending source</span></div>
+            <div class="book-cover-large asset-placeholder asset-placeholder--book" data-required-asset="/assets/book/for-girls-only-cover-web.webp" data-asset-src="assets/book/for-girls-only-cover-web.webp" data-asset-alt="For Girls Only by Ruth Obi-Egbe book cover" role="img" aria-label="For Girls Only approved book cover pending repository upload"><span>Approved book cover pending source</span></div>
             <div class="book-vertical-label">FOR GIRLS ONLY</div>
           </div>
         </div>
@@ -294,6 +301,39 @@
       </div>
     </section>
 
+
+    <section class="media-section" id="media">
+      <div class="shell media-layout">
+        <div class="media-heading">
+          <div class="eyebrow">MEDIA / PROJECT MOMENTS</div>
+          <h2>See the Project in motion.</h2>
+        </div>
+
+        <figure class="campaign-board-card">
+          <div class="campaign-board-frame asset-placeholder asset-placeholder--media"
+               data-asset-src="assets/media/sugar-spice-campaign-board.jpeg"
+               data-asset-alt="Sugar & Spice campaign board featuring For Girls Only, approved partner logos and the confirmed campaign QR code"
+               role="img"
+               aria-label="Approved Sugar & Spice campaign board pending repository upload">
+            <span>Approved campaign board pending repository upload</span>
+          </div>
+          <figcaption class="campaign-board-meta">
+            <span class="path-kicker">PROJECT MOMENT</span>
+            <button class="micro-link media-full-view" type="button" hidden>View full board <span aria-hidden="true">→</span></button>
+          </figcaption>
+        </figure>
+
+        <div class="media-supporting" aria-label="Supporting Project moments">
+          <div class="media-moment asset-placeholder">
+            <span>Approved school/community image selected — source integration pending</span>
+          </div>
+          <div class="media-moment asset-placeholder">
+            <span>Additional approved media may be integrated when selected</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="faq-section" id="faq">
       <div class="shell faq-layout">
         <div class="faq-heading">
@@ -304,28 +344,28 @@
 
         <div class="faq-list">
           <article class="faq-item">
-            <button aria-expanded="false"><span>Who is the book for?</span><span>+</span></button>
-            <div class="faq-answer">The book is primarily designed for girls approximately 8–18, while remaining useful for parents, guardians, mentors and women who guide them.</div>
+            <button type="button" aria-expanded="false" aria-controls="faq-answer-1"><span>Who is the book for?</span><span aria-hidden="true">+</span></button>
+            <div class="faq-answer" id="faq-answer-1" role="region" hidden>The book is primarily designed for girls approximately 8–18, while remaining useful for parents, guardians, mentors and women who guide them.</div>
           </article>
           <article class="faq-item">
-            <button aria-expanded="false"><span>Is it a Christian book?</span><span>+</span></button>
-            <div class="faq-answer">The project is rooted in a Christian worldview and God’s design for girls and women, while addressing identity, character, purpose, confidence and growth.</div>
+            <button type="button" aria-expanded="false" aria-controls="faq-answer-2"><span>Is it a Christian book?</span><span aria-hidden="true">+</span></button>
+            <div class="faq-answer" id="faq-answer-2" role="region" hidden>The project is rooted in a Christian worldview and God’s design for girls and women, while addressing identity, character, purpose, confidence and growth.</div>
           </article>
           <article class="faq-item">
-            <button aria-expanded="false"><span>How do I get a copy?</span><span>+</span></button>
-            <div class="faq-answer">Copies will be available through the project’s approved purchase channel.</div>
+            <button type="button" aria-expanded="false" aria-controls="faq-answer-3"><span>How do I get a copy?</span><span aria-hidden="true">+</span></button>
+            <div class="faq-answer" id="faq-answer-3" role="region" hidden>Copies will be available through the project’s approved purchase channel.</div>
           </article>
           <article class="faq-item">
-            <button aria-expanded="false"><span>Can I sponsor copies?</span><span>+</span></button>
-            <div class="faq-answer">Yes. Sponsorship is designed for individuals, brands and organisations that want to support access to the book for girls.</div>
+            <button type="button" aria-expanded="false" aria-controls="faq-answer-4"><span>Can I sponsor copies?</span><span aria-hidden="true">+</span></button>
+            <div class="faq-answer" id="faq-answer-4" role="region" hidden>Yes. Sponsorship is designed for individuals, brands and organisations that want to support access to the book for girls.</div>
           </article>
           <article class="faq-item">
-            <button aria-expanded="false"><span>Can my school, church or community host an activation?</span><span>+</span></button>
-            <div class="faq-answer">Yes. Schools, churches and communities can enquire about approved Sugar &amp; Spice activations.</div>
+            <button type="button" aria-expanded="false" aria-controls="faq-answer-5"><span>Can my school, church or community host an activation?</span><span aria-hidden="true">+</span></button>
+            <div class="faq-answer" id="faq-answer-5" role="region" hidden>Yes. Schools, churches and communities can enquire about approved Sugar &amp; Spice activations.</div>
           </article>
           <article class="faq-item">
-            <button aria-expanded="false"><span>How can an organisation partner?</span><span>+</span></button>
-            <div class="faq-answer">Strategic, corporate, institutional and in-kind partnership routes are part of the planned conversion model.</div>
+            <button type="button" aria-expanded="false" aria-controls="faq-answer-6"><span>How can an organisation partner?</span><span aria-hidden="true">+</span></button>
+            <div class="faq-answer" id="faq-answer-6" role="region" hidden>Strategic, corporate, institutional and in-kind partnership routes are part of the planned conversion model.</div>
           </article>
         </div>
 
@@ -369,10 +409,32 @@
     </div>
   </footer>
 
-  <div class="mobile-conversion">
-    <a class="button primary" data-link-key="buy" data-pending-label="The Selar purchase link">Get Book</a>
-    <a class="button secondary" data-link-key="sponsor" data-pending-label="The sponsorship route">Sponsor</a>
-  </div>
+  <aside class="sticky-book-action" aria-label="Book purchase reminder" hidden>
+    <div class="sticky-book-thumb asset-placeholder"
+         data-asset-src="assets/book/for-girls-only-cover-web.webp"
+         data-asset-alt="For Girls Only by Ruth Obi-Egbe book cover">
+      <span aria-hidden="true">Book</span>
+    </div>
+    <div class="sticky-book-copy">
+      <strong>For Girls Only</strong>
+      <span>Ruth Obi-Egbe</span>
+    </div>
+    <a class="button primary sticky-book-cta" data-link-key="buy">Get the Book</a>
+  </aside>
+
+  <dialog class="media-dialog" aria-labelledby="media-dialog-title">
+    <div class="media-dialog-header">
+      <strong id="media-dialog-title">Sugar &amp; Spice Campaign Board</strong>
+      <button type="button" class="media-dialog-close" aria-label="Close campaign board view">×</button>
+    </div>
+    <div class="media-dialog-scroll">
+      <div class="media-dialog-asset asset-placeholder"
+           data-asset-src="assets/media/sugar-spice-campaign-board.jpeg"
+           data-asset-alt="Sugar & Spice campaign board featuring For Girls Only, approved partner logos and the confirmed campaign QR code">
+        <span>Approved campaign board pending repository upload</span>
+      </div>
+    </div>
+  </dialog>
 
   <div class="toast" role="status" aria-live="polite"></div>
 
