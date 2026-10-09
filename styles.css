@@ -84,6 +84,14 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
 .button.primary{background:var(--burg);color:#fff}
 .button.primary:hover{background:var(--burg-dark)}
 .button.secondary{background:transparent;border-color:var(--rose);color:var(--burg)}
+.is-unresolved{
+  opacity:.82;
+  cursor:not-allowed!important;
+}
+a.is-unresolved,button.is-unresolved{pointer-events:none}
+.button.is-unresolved{
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+}
 .button.gold-button{background:#f4c76b;color:var(--burg-dark);padding-inline:28px}
 .micro-link{
   min-height:48px;
