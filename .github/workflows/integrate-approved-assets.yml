@@ -1,9 +1,7 @@
 name: Integrate approved Sugar Spice assets
 
 on:
-  push:
-    branches:
-      - build/option2-production-ready-20261009
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,16 +16,16 @@ jobs:
           ref: build/option2-production-ready-20261009
           fetch-depth: 0
 
-      - name: Decode and verify approved book asset
+      - name: Decode and verify approved assets
         shell: bash
         run: |
           set -euo pipefail
           test -f .asset-transfer/READY
           mkdir -p assets/book assets/media
-          cat .asset-transfer/book-00.b64 .asset-transfer/book-01.b64 .asset-transfer/book-02.b64 | base64 --decode > assets/book/for-girls-only-cover-web.webp
+          cat .asset-transfer/book2-*.b64 | base64 --decode > assets/book/for-girls-only-cover-web.webp
+          cat .asset-transfer/board2-*.b64 | base64 --decode > assets/media/sugar-spice-campaign-board.jpeg
           test "$(stat -c%s assets/book/for-girls-only-cover-web.webp)" = "260776"
           echo "6b375ae5a7905ebf5f24b23de63f4f1f7022da5a  assets/book/for-girls-only-cover-web.webp" | sha1sum -c -
-          test -f assets/media/sugar-spice-campaign-board.jpeg
           test "$(stat -c%s assets/media/sugar-spice-campaign-board.jpeg)" = "108141"
           echo "006be52a1dc78eefe4f3f5f1d28e4a34617daaea  assets/media/sugar-spice-campaign-board.jpeg" | sha1sum -c -
 
